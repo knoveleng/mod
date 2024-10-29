@@ -1,0 +1,12 @@
+
+models:
+  - model: Qwen/Qwen2.5-1.5B-Instruct
+  - model: Qwen/Qwen2.5-Math-1.5B-Instruct
+    parameters:
+      density: 0.9
+      weight: 0.1
+merge_method: breadcrumbs
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+parameters:
+  normalize: true
+dtype: bfloat16

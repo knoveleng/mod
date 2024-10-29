@@ -1,0 +1,10 @@
+
+models:
+  - model: Qwen/Qwen2.5-1.5B-Instruct
+    parameters:
+      weight: 0.9
+  - model: Qwen/Qwen2.5-Math-1.5B-Instruct
+    parameters:
+      weight: 0.1
+merge_method: linear
+dtype: float16

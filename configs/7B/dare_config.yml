@@ -1,0 +1,13 @@
+
+models:
+  - model: Qwen/Qwen2.5-7B-Instruct
+    # No parameters necessary for base model
+  - model: Qwen/Qwen2.5-Math-7B-Instruct
+    parameters:
+      density: 0.9
+      weight: 0.1
+merge_method: dare_ties
+base_model: Qwen/Qwen2.5-7B-Instruct
+parameters:
+  int8_mask: true
+dtype: bfloat16

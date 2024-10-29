@@ -1,0 +1,18 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+gate_mode: hidden
+dtype: bfloat16
+architecture: qwen
+
+experts:
+  - source_model: Qwen/Qwen2.5-1.5B-Instruct
+    positive_prompts:
+      - "You are an helpful AI assistant, "
+
+  - source_model: Qwen/Qwen2.5-Math-1.5B-Instruct
+    positive_prompts:
+      - "You are an professional AI assistant in Math field, "
+
+shared_experts:
+  - source_model: Qwen/Qwen2.5-1.5B-Instruct
+    positive_prompts: # required by Qwen MoE for "hidden" gate mode, otherwise not allowed
+      - "You are an helpful AI assistant, "

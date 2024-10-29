@@ -1,0 +1,16 @@
+slices:
+  - sources:
+      - model: Qwen/Qwen2.5-7B-Instruct
+        layer_range: [0, 28]
+      - model: Qwen/Qwen2.5-Math-7B-Instruct
+        layer_range: [0, 28]
+merge_method: slerp
+base_model: Qwen/Qwen2.5-7B-Instruct
+parameters:
+  t:
+    - filter: self_attn
+      value: 0.1
+    - filter: mlp
+      value: 0.1
+    - value: 0.1
+dtype: bfloat16

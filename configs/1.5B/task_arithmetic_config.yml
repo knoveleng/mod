@@ -1,0 +1,16 @@
+models:
+  - model: Qwen/Qwen2.5-1.5B-Instruct
+    parameters:
+      weight: 0.9
+
+  - model: Qwen/Qwen2.5-Math-1.5B-Instruct
+    parameters:
+      weight: 0.1
+
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+merge_method: task_arithmetic
+parameters:
+  normalize: true
+  int8_mask: true
+
+dtype: bfloat16

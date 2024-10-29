@@ -2,8 +2,12 @@
 
 This repository contains the codebase for the paper: **MoD: A Distribution-Based Approach for Merging Large Language Models**.
 
-## Project Overview 
+![MoD Pipeline](assets/pipeline.png)
 
+*Large language models (LLMs) have enabled the development of numerous specialized, task-specific variants. However, the maintenance and deployment of these individual models present substantial challenges in terms of resource utilization and operational efficiency.
+In this work, we propose the Mixture of Distributions (MoD) framework, a novel approach for merging LLMs that operates directly on their output probability distributions, rather than on model weights. Unlike traditional weight-averaging methods, MoD effectively preserves the specialized capabilities of individual models while enabling efficient knowledge sharing across tasks. Through extensive experimentation on mathematical reasoning benchmarks using Qwen2.5 models, we demonstrate that MoD significantly outperforms existing model merging techniques across multiple benchmarks.*
+
+## Project Structure
 - **configs**: Configuration files for running the program and evaluation phases.
 - **mod**: Source code for the `mod` package.
 - **scripts**: Scripts to execute the main MoD program and evaluation phases.

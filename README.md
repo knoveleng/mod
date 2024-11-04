@@ -1,6 +1,6 @@
 # Mixture of Distribution (MoD)
 
-This repository contains the codebase for the paper: **MoD: A Distribution-Based Approach for Merging Large Language Models**.
+This repository contains the codebase for the paper [MoD: A Distribution-Based Approach for Merging Large Language Models](https://arxiv.org/abs/2411.00406).
 
 ![MoD Pipeline](assets/pipeline.png)
 

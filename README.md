@@ -55,3 +55,16 @@ To ensure code integrity, create a pull request and run tests before pushing cha
 pip install pytest
 pytest ./tests/
 ```
+
+## Cite our Work
+```
+@misc{dang2024moddistributionbasedapproachmerging,
+      title={MoD: A Distribution-Based Approach for Merging Large Language Models}, 
+      author={Quy-Anh Dang and Chris Ngo},
+      year={2024},
+      eprint={2411.00406},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.00406}, 
+}
+```

@@ -1,0 +1,12 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+
+experts:
+  - source_model: Qwen/Qwen2.5-1.5B-Instruct
+  - source_model: Qwen/Qwen2.5-Math-1.5B-Instruct
+
+model_kwargs:
+  - device_map: cuda
+  - low_cpu_mem_usage: True
+  - trust_remote_code: True
+
+weights: [0.9, 0.1]

@@ -61,6 +61,15 @@ pytest ./tests/
 
 ## Cite our Work
 ```
+@inproceedings{
+dang2024mod,
+title={MoD: A Distribution-Based Approach for Merging Large Language Models},
+author={Quy-Anh Dang and Chris Ngo},
+booktitle={LLM Merging Competition at NeurIPS 2024},
+year={2024},
+url={https://openreview.net/forum?id=v2tZ9bNcS5}
+}
+
 @misc{dang2024moddistributionbasedapproachmerging,
       title={MoD: A Distribution-Based Approach for Merging Large Language Models}, 
       author={Quy-Anh Dang and Chris Ngo},
